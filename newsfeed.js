@@ -1,13 +1,12 @@
 function loadNewsJSONAsHTML(result) {
-  var myString = "";
+  var newsfeed = "";
   for (var i = 0; i < result.length; i++) {
     var nextResult = result[i];
 
-    myString += "<h2>" + nextResult['type'] + "</h2>";
+    myString += "<h2>" + nextResult['headline'] + "</h2>" + "<p>" + nextResult['body'] + "</p>";
   }
 
-  // Set the HTML
-  $("#list_chocolates").html(myString);
+  $("newsfeed-contet").html(myString);
 
 }
 
@@ -21,4 +20,4 @@ function requestNewsFeed() {
 
 $('#news_button').click(function() {
   requestNewsFeed();
-}
+})
