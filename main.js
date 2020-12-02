@@ -1,5 +1,5 @@
 var i = 0;
-var txt = "Hello! Welcome to Nathan's Website";
+var txt = "Hello! Welcome to Jacky's Website";
 var speed = 3000;
 const individualSpeed = speed / txt.length;
 
@@ -36,4 +36,3 @@ function loadGame(){
 }
 
 $(document.getElementbyID("load_game")).click(loadGame);
-
