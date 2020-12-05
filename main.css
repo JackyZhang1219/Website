@@ -51,7 +51,11 @@
 
 body {
   height: 110vh;
+  background-color: #000000;
 }
+
 #scrolling {
   font-size: 75px;
+  color: white;
+  font-family: "Space Mono";
 }

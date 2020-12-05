@@ -1,5 +1,12 @@
+var cookie = document.cookie;
+if(!cookie){
+  cookie = 1;
+}
+cookie++;
+document.cookie = cookie;
+
 var i = 0;
-var txt = "Hello! Welcome to Jacky's Website";
+var txt = "Hello! Welcome to Jacky's Website.";
 var speed = 3000;
 const individualSpeed = speed / txt.length;
 

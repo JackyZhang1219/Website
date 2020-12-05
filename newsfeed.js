@@ -3,7 +3,7 @@ function loadNewsJSONAsHTML(result) {
   for (var i = 0; i < result.length; i++) {
     var nextResult = result[i];
 
-    newsfeed += "<h2>" + nextResult['headline'] + "</h2>" + "<p>" + nextResult['body'] + "</p>";
+    newsfeed += "<h3>" + nextResult['headline'] + "</h3>" + "<p>" + nextResult['body'] + "</p>";
   }
 
   $("#newsfeed_content").html(newsfeed);
